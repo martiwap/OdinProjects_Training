@@ -1,0 +1,55 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Library Project</title>
+    <meta name="description" content="The HTML5 Herald">
+    <meta name="author" content="Mart">
+
+    <link rel="stylesheet" href="library.css">
+
+</head>
+
+<body>
+
+    <div id="myLibrary">
+    </div>
+
+    <!-- Trigger/Open The Modal -->
+    <button id="myBtn">New Book</button>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form>
+                <label for="title">Title</label><br>
+                <input type="text" id="title" name="title"><br>
+                <br>
+                <label for="author">Author</label><br>
+                <input type="text" id="author" name="author"><br>
+                <br>
+                <label for="pages">Pages</label><br>
+                <input type="text" id="pages" name="pages"><br>
+                <br>
+                <label>Read:</label><br>
+                <input type="radio" id="read-already" name="gender" value="true">
+                <label for="true">Yes</label><br>
+                <input type="radio" id="not-read" name="gender" value="false">
+                <label for="false">No</label><br>
+                <br>
+                <input type="submit" value="Submit" onclick="addBookToLibrary()">
+            </form>
+
+        </div>
+
+    </div>
+
+    <script src="library.js"></script>
+</body>
+
+</html>
